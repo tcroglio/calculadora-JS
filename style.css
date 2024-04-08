@@ -12,7 +12,7 @@ h1 {
     text-align: center;
 }
 
-.content {
+.botoes {
     background-color: black;
     position: absolute;
     top: 50%;
@@ -125,11 +125,52 @@ button:hover {
     color: black;
 }
 
+
 /* Media query para dispositivos móveis */
-@media screen and (max-width: 768px) {
-    .rodape1,
-    .rodape2 {
-        position: fixed;
-        width: 100%;
+
+@media screen and (max-width: 415px) {
+
+    /* iphone XR*/
+    button {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: rgb(63, 58, 58);
+        color: white;
+        margin: 1px;
+        border: none;
+        transition: 0.30s;
+        text-align: center;
     }
-}   
+
+    button:hover {
+        background-color: black;
+        opacity: 0.7;
+    }
+
+    footer {
+        margin: 0;
+        padding: 0;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        margin-top: 100px;
+    }
+
+    .rodape1 {
+        margin-top: auto;
+        padding: 20px;
+    }
+
+    .rodape2 {
+        padding: 20px;
+
+        ul {
+            text-align: center;
+        }
+    }
+}
